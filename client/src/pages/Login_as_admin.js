@@ -2,11 +2,13 @@ import React from "react";
 import Layout from "../components/Layout";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import "../pages/Admin.css";
+import login from "../pages/login_image.jpg";
 
 const Login_as_admin = () => {
   return (
     <Layout>
-      <div className="wrapper">
+      <div className="wrapper" style={{ backgroundImage: `url(${login})` }}>
         <form action="">
           <h1>Login </h1>
           <div className="input-box">
@@ -31,8 +33,6 @@ const Login_as_admin = () => {
             </p>
           </div>
         </form>
-
-        <h1>Welcome to login page of admin</h1>
       </div>
     </Layout>
   );
