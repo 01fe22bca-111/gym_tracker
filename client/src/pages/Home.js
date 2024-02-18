@@ -11,7 +11,7 @@ const Home = () => {
         <div className="headerContainer">
           <h1>GYM TRACKER</h1>
           <p>LETS WORK OUT</p>
-          <Link to="/Login_as_admin">
+          <Link to="/Login_as_customer">
             <button>LETS START</button>
           </Link>
         </div>

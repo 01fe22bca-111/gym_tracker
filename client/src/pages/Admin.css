@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .wrapper {
   -webkit-font-smoothing: antialised;
   -moz-osx-font-smoothing: grayscale;
@@ -12,6 +13,8 @@
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(100px);
 }
 .wrapper h1 {
   font-size: 36px;
@@ -30,6 +33,7 @@
   border: none;
   outline: none;
   border: 2px solid rgba(255, 255, 0.2);
+  outline: none;
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
