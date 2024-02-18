@@ -4,11 +4,12 @@ import user_icon from "../Images/Assets/person.png";
 import email_icon from "../Images/Assets/email.png";
 import password_icon from "../Images/Assets/password.png";
 import "../pages/signup.css";
+import login from "../pages/login-page1.jpg";
 const Login_as_customer = () => {
   const [action, setAction] = useState("Sign Up");
   return (
     <Layout>
-      <div className="container">
+      <div className="container" style={{ backgroundImage: `url(${login})` }}>
         <div className="header">
           <div className="text">{action}</div>
           <div className="underline"></div>
@@ -39,7 +40,6 @@ const Login_as_customer = () => {
             Lost Password? <span>Click Here</span>
           </div>
         )}
-
         <div className="submit-container">
           <div
             className={action === "Login" ? "submit gray" : "submit"}
