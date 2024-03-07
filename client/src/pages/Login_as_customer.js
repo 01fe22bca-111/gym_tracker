@@ -6,7 +6,7 @@ import password_icon from "../Images/Assets/password.png";
 import "../pages/signup.css";
 import login from "../pages/login-page1.jpg";
 const Login_as_customer = () => {
-  const [action, setAction] = useState("Sign Up");
+  const [action, setAction] = useState("Sign In");
   return (
     <Layout>
       <div className="container" style={{ backgroundImage: `url(${login})` }}>
