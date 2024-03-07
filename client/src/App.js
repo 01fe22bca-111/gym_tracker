@@ -3,9 +3,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login_as_admin from "./pages/Login_as_admin";
-import Pagenotfound from "./pages/Pagenotfound";
 import Login_as_customer from "./pages/Login_as_customer";
-import Admin from "./pages/Admin";
+import Admin from "./Admin/Admin";
+import Admin_Header from "./Admin/Admin_Header";
+import AdminList from "./Admin/AdminList";
+import Customer from "./Admin/Customer";
+import CustomerList from "./Admin/CustomerList";
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,9 +18,12 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/login_as_admin" element={<Login_as_admin />} />
-        <Route path="/*" element={<Pagenotfound />} />
         <Route path="/login_as_customer" element={<Login_as_customer />} />
-        <Route path="./Admin" element={<Admin />} />
+        <Route path="/Admin" element={<Admin />} />
+        <Route path="/Admin_Header" element={<Admin_Header />} />
+        <Route path="/AdminList" element={<AdminList />} />
+        <Route path="/Customer" element={<Customer />} />
+        <Route path="/CustomerList" element={<CustomerList />} />
       </Routes>
     </BrowserRouter>
   );
