@@ -1,5 +1,5 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Diet_plan from "./pages/Diet_paln";
 import Warmup from "./pages/Warmup";
 import Day1 from "./pages/Day1";
 import Day2 from "./pages/Day2";
@@ -13,6 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/Diet_plan" element={<Diet_plan/>} />
           <Route path="/Warmup" element={<Warmup />} />
           <Route path="/Day1" element={<Day1 />} />
           <Route path="/Day2" element={<Day2 />} />
